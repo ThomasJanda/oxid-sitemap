@@ -45,12 +45,12 @@ class rs_sitemap_generator extends \OxidEsales\Eshop\Application\Controller\Admi
     private function _getUrl()
     {
         $this->_getPath();
-        $sUrl = $this->getConfig()->getShopUrl()."rs_sitemap/";
+        $sUrl = $this->getConfig()->getShopUrl()."export/";
         return $sUrl;
     }
     private function _getPath()
     {
-        $sDir = $this->getConfig()->getConfigParam('sShopDir')."rs_sitemap";
+        $sDir = $this->getConfig()->getConfigParam('sShopDir')."export";
         @mkdir($sDir);
         return $sDir."/";
     }

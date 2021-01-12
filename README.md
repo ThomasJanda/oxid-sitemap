@@ -15,10 +15,8 @@ https://search.google.com/search-console
 1. Copy files into following directory
 
         source/modules/rs/sitemap
-
-2. Create a directory with write/read permission in the shop root called "rs_sitemap"
         
-3. Add following to composer.json on the shop root
+2. Add following to composer.json on the shop root
 
         "autoload": {
             "psr-4": {
@@ -34,4 +32,4 @@ https://search.google.com/search-console
 
 ## How to use
 
-If you generate a sitemap, you can find the file in the shop "#SHOP_ROOT_DIRECTORY#/rs_sitemap/1.xml".
+If you generate a sitemap, you can find the file in the shop "#SHOP_ROOT_DIRECTORY#/export/1.xml".
